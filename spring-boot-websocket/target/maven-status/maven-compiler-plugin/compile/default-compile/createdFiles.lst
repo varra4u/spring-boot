@@ -1,0 +1,8 @@
+com\varra\websocket\spring\service\WebSocketApplication.class
+com\varra\websocket\spring\service\ClientMessage.class
+com\varra\websocket\spring\client\MMSSessionHandler.class
+com\varra\websocket\spring\client\MMSServiceClient.class
+com\varra\websocket\spring\service\MessageController.class
+com\varra\websocket\spring\service\MessageUpdater.class
+com\varra\websocket\spring\service\ServerMessage.class
+com\varra\websocket\spring\service\WebSocketConfig.class
