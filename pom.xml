@@ -5,9 +5,9 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.varra.spring-boot</groupId>
-    <artifactId>parent-modules</artifactId>
+    <artifactId>parent</artifactId>
     <version>1.0</version>
-    <name>parent-modules</name>
+    <name>parent</name>
     <packaging>pom</packaging>
 	
     <properties>
@@ -27,16 +27,12 @@
 	
 	<modules>
 		<module>spring-boot-websocket</module>
+        <module>spring-boot-rabbitmq</module>
 	</modules>
     <dependencies>
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
-            <version>${spring.boot.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-websocket</artifactId>
             <version>${spring.boot.version}</version>
         </dependency>
         <dependency>

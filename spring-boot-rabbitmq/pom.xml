@@ -4,22 +4,22 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>com.varra.websocket</groupId>
-    <artifactId>spring-boot-websocket</artifactId>
+    <groupId>com.varra.amqp</groupId>
+    <artifactId>spring-boot-rabbitmq</artifactId>
     <version>1.0</version>
 
     <parent>
-		<groupId>com.varra.spring-boot</groupId>
-		<artifactId>parent</artifactId>
-		<version>1.0</version>
+        <groupId>com.varra.spring-boot</groupId>
+        <artifactId>parent</artifactId>
+        <version>1.0</version>
     </parent>
 
     <dependencies>
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-websocket</artifactId>
-            <version>${spring.boot.version}</version>
-        </dependency>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-amqp</artifactId>
+			<version>${spring.boot.version}</version>
+		</dependency>
     </dependencies>
 
     <build>
@@ -29,7 +29,7 @@
                 <artifactId>spring-boot-maven-plugin</artifactId>
                 <version>${spring.boot.version}</version>
                 <configuration>
-                    <mainClass>com.varra.websocket.spring.service.WebSocketApplication</mainClass>
+                    <mainClass>com.varra.rabbitmq.spring.service.RabbitMQApplication</mainClass>
                 </configuration>
                 <executions>
                     <execution>
