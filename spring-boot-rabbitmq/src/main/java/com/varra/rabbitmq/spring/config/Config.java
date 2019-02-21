@@ -19,6 +19,9 @@ public class Config
     @Value("${routing.key}")
     private String routingKey;
 
+    @Value("${pdfs.routing.key}")
+    private String pdfsRoutingKey;
+
     @Value("${processing.time}")
     private int processingTime;
 }
